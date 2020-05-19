@@ -13,13 +13,13 @@ def load_library(path)
   emoticons_hash
 end
 
-def get_japanese_emoticon(file_path, emoticon)
+def get_japanese_emoticon(file_path, english_emoticon)
   library = load_library('./lib/emoticons.yml')
   library.each do |key, value|
     binding.pry
   end
 end
 
-def get_english_meaning(fille_path, emoticon)
+def get_english_meaning(fille_path, japanese_emoticon)
  
 end
