@@ -3,7 +3,7 @@ require 'yaml'
 
 def load_library
   File.open("emoticons.yml") { |file| file.write(emoticons.to_yaml) }
-  
+  binding.pry
 end
 
 def get_japanese_emoticon
