@@ -5,7 +5,7 @@ def load_library(path)
   emoticons_hash = {}
   emoticons = YAML.load_file(path)
   emoticons.each do |meaning, emojis|
-    
+  
   binding.pry
   # emoticons_from_yaml_file = {}
   # File.open("emoticons.yml") { |file| file.write(emoticons.to_yaml) }
