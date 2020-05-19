@@ -1,6 +1,6 @@
 require 'pry'
 require 'yaml'
-hash[:hello][:yes] = 
+
 
 def load_library(path)
   emoticons_hash = {}
