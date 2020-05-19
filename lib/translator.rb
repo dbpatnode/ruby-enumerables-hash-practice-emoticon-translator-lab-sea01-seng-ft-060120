@@ -14,8 +14,9 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  
-  library = load_library(./lib/emoticons.yml)
+  library = load_library('./lib/emoticons.yml')
+  library.each do |key, value|
+    binding.pry
   end
 end
 
