@@ -13,7 +13,8 @@ def load_library(path)
   emoticons_hash
 end
 
-def get_japanese_emoticon(load_library, emoticon)
+def get_japanese_emoticon(, emoticon)
+  japanese_emoticons = 
   load_library.each do |key, value|
     binding.pry
   end
