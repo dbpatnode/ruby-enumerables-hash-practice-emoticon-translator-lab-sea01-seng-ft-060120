@@ -29,7 +29,6 @@ def get_english_meaning(fille_path, japanese_emoji)
   library = load_library('./lib/emoticons.yml')
   library.each do |meaning, emoji|
       return emoji[:english] if emoji[:japanese] == japanese_emoji
-      binding.pry
   end
   "Sorry, that emoticon was not found"
 end
