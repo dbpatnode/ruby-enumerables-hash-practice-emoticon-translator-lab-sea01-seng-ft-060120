@@ -1,9 +1,8 @@
 require 'pry'
-require ''
+require 'yaml'
 
 def load_library
-  
-  binding.pry# code goes here
+  File.open("emoticons.yml", "w") { |file| file.write(recipe.to_yaml) }
 end
 
 def get_japanese_emoticon
