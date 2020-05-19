@@ -1,11 +1,13 @@
 require 'pry'
 require 'yaml'
 
-def load_library
-  emoticons_from_yaml_file = {}
-  File.open("emoticons.yml") { |file| file.write(emoticons.to_yaml) }
+def load_library(path)
+  emoticons = YAML.load_file(path)
   binding.pry
-  emoticons_from_yaml_file = YAML.load(File.read("emoticons.yml"))
+  # emoticons_from_yaml_file = {}
+  # File.open("emoticons.yml") { |file| file.write(emoticons.to_yaml) }
+  # binding.pry
+  # emoticons_from_yaml_file = YAML.load(File.read("emoticons.yml"))
 end
 
 def get_japanese_emoticon
