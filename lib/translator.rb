@@ -13,24 +13,24 @@ def load_library(path)
   emoticons_hash
 end
 
-def get_japanese_emoticon(file_path, english_emoji)
-  library = load_library("./lib/emoticons.yml")
+# def get_japanese_emoticon(file_path, english_emoji)
+#   library = load_library("./lib/emoticons.yml")
   
-  library.each do |key, value|
-    value[:japanese]
-      if value[:english] == english_emoji
-      end
-      "Sorry, that emoticon was not found"
-  end  
-end
+#   library.each do |key, value|
+#     value[:japanese]
+#       if value[:english] == english_emoji
+#       end
+#       "Sorry, that emoticon was not found"
+#   end  
+# end
 
 
-# def get_japanese_emoticon(file_path, eng_emo)
-#   # code goes here
-#   library = load_library('./lib/emoticons.yml')
-#   library.each do |meaning, idioms|
-#       return idioms[:japanese] if idioms[:english] == eng_emo
-#   end
+def get_japanese_emoticon(file_path, eng_emo)
+  # code goes here
+  library = load_library('./lib/emoticons.yml')
+  library.each do |meaning, idioms|
+      return idioms[:japanese] if idioms[:english] == eng_emo
+  end
 #   "Sorry, that emoticon was not found"
 # end
 # def get_english_meaning(file_path, jap_emo)
