@@ -2,6 +2,7 @@ require 'pry'
 require 'yaml'
 
 def load_library(path)
+  emoticons_hash = {}
   emoticons = YAML.load_file(path)
   emoticons.each do |meaning, emojis|
     
