@@ -2,7 +2,8 @@ require 'pry'
 # require modules here
 
 def load_library
-  # code goes here
+  
+  binding.pry# code goes here
 end
 
 def get_japanese_emoticon
