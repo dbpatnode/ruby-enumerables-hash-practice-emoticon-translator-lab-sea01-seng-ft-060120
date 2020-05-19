@@ -2,7 +2,7 @@ require 'pry'
 require 'yaml'
 
 def load_library
-  File.open("emoticons.yml", "w") { |file| file.write(recipe.to_yaml) }
+  File.open("emoticons.yml") { |file| file.write(recipe.to_yaml) }
 end
 
 def get_japanese_emoticon
